@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaWeb Studio | Presupuesto</title>
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script defer src="../assets/js/main.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container navbar">
+    <a class="brand" href="../index.html" aria-label="Ir al inicio">
+      <img src="../assets/img/logo.png" alt="Logo NovaWeb Studio">
+      <span>NovaWeb Studio</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="galeria.html">Galería</a>
+      <a class="active" href="presupuesto.html">Presupuesto</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="panel">
+    <h1>Presupuesto</h1>
+    <p class="small">Rellena los datos. El total se calcula automáticamente.</p>
+
+    <form id="formPresupuesto" class="form" novalidate>
+
+      <!-- CONTACTO -->
+      <div class="field">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="given-name">
+        <small id="errNombre" class="error"></small>
+      </div>
+
+      <div class="field">
+        <label for="apellidos">Apellidos</label>
+        <input id="apellidos" name="apellidos" type="text" autocomplete="family-name">
+        <small id="errApellidos" class="error"></small>
+      </div>
+
+      <div class="field">
+        <label for="telefono">Teléfono</label>
+        <input id="telefono" name="telefono" type="tel" inputmode="numeric" autocomplete="tel">
+        <small id="errTelefono" class="error"></small>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <small id="errEmail" class="error"></small>
+      </div>
+
+      <!-- PRESUPUESTO -->
+      <div class="field full">
+        <label for="producto">Producto</label>
+        <select id="producto" name="producto">
+          <option value="">— Selecciona —</option>
+          <option value="web-corporativa">Web corporativa (500€)</option>
+          <option value="landing">Landing (350€)</option>
+          <option value="ecommerce">E-commerce (900€)</option>
+        </select>
+        <small id="errProducto" class="error"></small>
+      </div>
+
+      <div class="field">
+        <label for="plazo">Plazo (días)</label>
+        <input id="plazo" name="plazo" type="number" min="1" step="1" value="30">
+        <small id="errPlazo" class="error"></small>
+        <p id="infoDescuento" class="small">Descuento: —</p>
+      </div>
+
+      <div class="field">
+        <label>Extras</label>
+
+        <div class="checkline">
+          <input id="extraSeo" type="checkbox">
+          <label for="extraSeo">SEO (+150€)</label>
+        </div>
+
+        <div class="checkline">
+          <input id="extraMantenimiento" type="checkbox">
+          <label for="extraMantenimiento">Mantenimiento (+100€)</label>
+        </div>
+
+        <div class="checkline">
+          <input id="extraDiseno" type="checkbox">
+          <label for="extraDiseno">Diseño premium (+200€)</label>
+        </div>
+      </div>
+
+      <!-- RESUMEN -->
+      <div class="field full">
+        <div class="result" aria-live="polite">
+          <strong>Resumen</strong>
+          <hr>
+          <p><strong>Producto:</strong> <span id="resProducto">—</span></p>
+          <p><strong>Extras:</strong> <span id="resExtras">—</span></p>
+          <p><strong>Descuento:</strong> <span id="resDescuento">—</span></p>
+          <p class="total"><strong>Total:</strong> <span id="resTotal">0€</span></p>
+        </div>
+      </div>
+
+      <!-- CONDICIONES -->
+      <div class="field full">
+        <div class="checkline">
+          <input id="condiciones" type="checkbox">
+          <label for="condiciones">Acepto las condiciones</label>
+        </div>
+        <small id="errCondiciones" class="error"></small>
+      </div>
+
+      <!-- BOTONES (ENVIAR / RESET) -->
+      <div class="field full actions">
+        <button class="btn" type="submit">Enviar presupuesto</button>
+        <button class="btn btn--ghost" type="reset">Reset</button>
+        <span id="msgPresupuesto" class="small" aria-live="polite"></span>
+      </div>
+
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-row">
+    <p>© 2026 NovaWeb Studio · Girona · <a href="#">Aviso legal</a></p>
+
+    <p class="social">
+      <a href="#" aria-label="Instagram"><img src="../assets/img/instagram.png" alt=""></a>
+      <a href="#" aria-label="Facebook"><img src="../assets/img/facebook.png" alt=""></a>
+      <a href="#" aria-label="LinkedIn"><img src="../assets/img/linkedin.png" alt=""></a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

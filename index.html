@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaWeb Studio | Inicio</title>
+  <meta name="description" content="NovaWeb Studio: diseño web moderno, desarrollo y soluciones digitales." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+  <img src="assets/img/logo.png" alt="Logo NovaWeb Studio">
+  <span class="brand__name">NovaWeb Studio</span>
+</a>
+
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a class="nav__link is-active" href="index.html">Inicio</a></li>
+          <li><a class="nav__link" href="views/noticias.html">Noticias</a></li>
+          <li><a class="nav__link" href="views/galeria.html">Galería</a></li>
+          <li><a class="nav__link" href="views/presupuesto.html">Presupuesto</a></li>
+          <li><a class="nav__link" href="views/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Diseño web moderno y desarrollo a medida</h1>
+          <p>
+            Creamos sitios rápidos, responsive y optimizados. Web corporativa, landing pages y proyectos con JavaScript avanzado.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="views/presupuesto.html">Pedir presupuesto</a>
+            <a class="btn btn--ghost" href="views/contacto.html">Contactar</a>
+            <a class="btn" href="views/contacto.html">Ir a contacto</a>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/img/logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Servicios</h2>
+
+        <div class="grid-cards">
+          <article class="card">
+            <h3>Diseño UI</h3>
+            <p>Interfaces limpias, accesibles y adaptadas a móvil.</p>
+          </article>
+
+          <article class="card">
+            <h3>Desarrollo Web</h3>
+            <p>HTML5 + CSS3 + JavaScript con estructura profesional.</p>
+          </article>
+
+          <article class="card">
+            <h3>AJAX y Dinamismo</h3>
+            <p>Contenido dinámico con fetch y JSON sin recargar la página.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS DINÁMICAS (obligatorio del PDF) -->
+    <section class="section" id="noticias">
+      <div class="container">
+        <h2>Noticias</h2>
+        <p id="newsStatus" class="status">—</p>
+        <div id="newsList" class="news"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>¿Por qué NovaWeb Studio?</h2>
+        <ul class="bullets">
+          <li>Webs rápidas y optimizadas</li>
+          <li>Diseño responsive real</li>
+          <li>Código ordenado y mantenible</li>
+          <li>Validaciones y UX cuidada</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta">
+        <h2>¿Empezamos?</h2>
+        <p>Cuéntanos tu idea y te proponemos una solución clara.</p>
+        <a class="btn" href="views/contacto.html">Ir a contacto</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>NovaWeb Studio</strong>
+        <p class="muted">Diseño y desarrollo web.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="views/noticias.html">Noticias</a>
+        <a href="views/galeria.html">Galería</a>
+        <a href="views/presupuesto.html">Presupuesto</a>
+        <a href="views/contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><img src="assets/img/instagram.png" alt="" /></a>
+        <a href="#" aria-label="Facebook"><img src="assets/img/facebook.png" alt="" /></a>
+        <a href="#" aria-label="LinkedIn"><img src="assets/img/linkedin.png" alt="" /></a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <small>© <span id="year"></span> NovaWeb Studio. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

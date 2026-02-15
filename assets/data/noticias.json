@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Inicio del proyecto NovaWeb Studio",
+    "fecha": "2026-01-28",
+    "texto": "Se define la estructura base del sitio web aplicando HTML semántico y diseño responsive."
+  },
+  {
+    "titulo": "Implementación de AJAX",
+    "fecha": "2026-02-02",
+    "texto": "Las noticias se cargan dinámicamente desde un archivo JSON externo sin recargar la página."
+  },
+  {
+    "titulo": "Galería dinámica completada",
+    "fecha": "2026-02-06",
+    "texto": "Se desarrolla un carrusel interactivo con navegación mediante botones, indicadores y teclado."
+  },
+  {
+    "titulo": "Validación de formulario",
+    "fecha": "2026-02-08",
+    "texto": "Los campos de contacto incorporan validaciones JavaScript mostrando errores claros al usuario."
+  },
+  {
+    "titulo": "Cálculo dinámico de presupuesto",
+    "fecha": "2026-02-09",
+    "texto": "El sistema actualiza precios automáticamente según producto, extras, plazo, descuento e IVA."
+  },
+  {
+    "titulo": "Mapa dinámico integrado",
+    "fecha": "2026-02-10",
+    "texto": "Se incorpora Leaflet con OpenStreetMap mostrando la ubicación de la empresa."
+  }
+]
